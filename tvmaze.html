@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TV Maze</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+
+    <h1>TV Maze</h1>
+
+    <form class="form-inline" id="search-form" >
+      <input class="form-control" id="search-query">
+      <button class="btn btn-primary" type="submit">Go!</button>
+    </form>
+
+    <div class="row mt-3" id="shows-list">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="episodes-area">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Episodes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
+          <div class="modal-body">
+            <ul id="episodes-list">
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="http://unpkg.com/axios/dist/axios.js"></script>
+    <script src="tvmaze.js"></script>
+
+    </div>
+
+  </body>
+</html>
